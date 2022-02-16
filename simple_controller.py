@@ -4,6 +4,9 @@ import neopixel
 from initializer import Initializer 
 class SimpleController(Initializer):
     
+    def __init__(self):
+        super().__init__(self)
+
     def process_event(self, event):
         message, deltatime = event
         state = message[0]

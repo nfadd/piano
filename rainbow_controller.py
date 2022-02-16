@@ -8,6 +8,7 @@ class RainbowController(Initializer):
     def __init__(self):
         self.color_on = (255,255,255)
         self.color_off = (0,0,0)
+        super().__init__(self)
 
     def process_event(self, event):
         self.color_off = self.color_on

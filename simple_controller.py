@@ -2,13 +2,8 @@
 import board
 import neopixel
 from initializer import Initializer 
-class SimpleController:
-    DOWN = 144
-
-    def __init__(self, num_lights, color_on, color_off):
-        super(SimpleController,self).__init__(num_lights, color_on, color_off)
-
-
+class SimpleController(Initializer):
+    
     def process_event(self, event):
         message, deltatime = event
         state = message[0]
